@@ -1,0 +1,32 @@
+def add_nums(x,y):
+    return x + y 
+
+def subtract_nums(x,y):
+    return x - y
+
+def multiply_nums(x,y):
+    return x * y
+
+def divide_nums(x,y):
+    return x/y
+
+def main():
+    one_number = int(input("What is the first number?"))
+    two_number = int(input("What is the second number?"))
+    two_number_operation = input("What operation do you want to perform on the numbers? Enter 'add' for addition, 'sub' for subtraction, 'mult' for multiplication, 'div' for division.")
+    answer = ""
+    if two_number_operation == "add":
+        answer = str(add_nums(one_number, two_number))
+    elif two_number_operation == "sub":
+        answer = str(subtract_nums(one_number, two_number))
+    elif two_number_operation == "mult":
+        answer = str(multiply_nums(one_number, two_number))
+    else:
+        answer = str(divide_nums(one_number, two_number))
+    
+    print(answer)
+   
+
+if __name__ == "__main__":
+        main()
+     
